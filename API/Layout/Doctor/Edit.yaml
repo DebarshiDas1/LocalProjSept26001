@@ -1,0 +1,67 @@
+- dataType: section
+  label: Doctor details
+  showTitle: true
+  column: 12
+  fields:
+    - fieldName: Code
+      label: Code
+      dataType: string
+      column: 3
+    - fieldName: Name
+      label: Name
+      dataType: string
+      column: 9
+    - fieldName: ClinicId
+      label: Clinic id
+      dataType: guid
+      entityName: Clinic
+      column: 6
+      required: false
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: dropdownlist
+      lookupView: null
+      operatorForSearch: contains
+      filterable: true
+      showDefaultValue: true
+      isValuePrimitive: true
+      showHorizontal: false
+      valueField: id
+      textField: name
+    - fieldName: SpecialtyId
+      label: Specialty id
+      dataType: guid
+      entityName: Specialty
+      column: 6
+      required: false
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: dropdownlist
+      lookupView: null
+      operatorForSearch: contains
+      filterable: true
+      showDefaultValue: true
+      isValuePrimitive: true
+      showHorizontal: false
+      valueField: id
+      textField: name
+    - fieldName: Phone
+      label: Phone
+      dataType: string
+      column: 6
+      required: false
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: textbox
+    - fieldName: Email
+      label: Email
+      dataType: string
+      column: 6
+      required: false
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: textbox

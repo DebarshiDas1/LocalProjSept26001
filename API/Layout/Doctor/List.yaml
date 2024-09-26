@@ -1,0 +1,79 @@
+grid:
+  cardTitle:
+    fields:
+      - dataType: string
+        label: Name
+        fieldName: Name
+        column: 12
+  cardDetail:
+    fields:
+      - dataType: string
+        label: Code
+        fieldName: Code
+        column: 6
+      - dataType: guid
+        label: SpecialtyId
+        fieldName: SpecialtyId
+        entityName: Specialty
+        column: 6
+      - dataType: string
+        label: Phone
+        fieldName: Phone
+        column: 6
+        icon: fas fa-phone
+      - dataType: string
+        label: Email
+        fieldName: Email
+        column: 6
+        icon: fas fa-envelope
+filter:
+  fields:
+    - dataType: string
+      label: Code
+      fieldName: Code
+      column: 4
+      required: false
+      readOnly: false
+      hint: null
+      type: textbox
+    - dataType: string
+      label: Name
+      fieldName: Name
+      column: 4
+      required: false
+      readOnly: false
+      hint: null
+      type: textbox
+    - dataType: guid
+      label: SpecialtyId
+      fieldName: SpecialtyId
+      entityName: Specialty
+      column: 4
+      required: false
+      readOnly: false
+      hint: null
+      type: dropdownlist
+      lookupView: null
+      operatorForSearch: contains
+      filterable: true
+      showDefaultValue: true
+      isValuePrimitive: true
+      showHorizontal: false
+      valueField: id
+      textField: name
+    - dataType: string
+      label: Phone
+      fieldName: Phone
+      column: 6
+      required: false
+      readOnly: false
+      hint: null
+      type: textbox
+    - dataType: string
+      label: Email
+      fieldName: Email
+      column: 6
+      required: false
+      readOnly: false
+      hint: null
+      type: textbox

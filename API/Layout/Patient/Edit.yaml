@@ -1,0 +1,61 @@
+- dataType: section
+  label: Patient details
+  showTitle: true
+  column: 12
+  fields:
+    - fieldName: Name
+      label: Name
+      dataType: string
+      column: 6
+      required: false
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: textbox
+    - fieldName: Code
+      label: Code
+      dataType: string
+      column: 6
+      required: false
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: textbox
+    - fieldName: BirthDate
+      label: Birth date
+      dataType: datetime
+      required: true
+      column: 6
+      readOnly: false
+      hint: null
+      defaultValue: null
+      format: MM/dd/yyyy HH:mm
+    - fieldName: Gender
+      label: Gender
+      dataType: string
+      column: 6
+    - fieldName: PhoneNumber
+      label: Phone number
+      dataType: string
+      column: 6
+    - fieldName: Email
+      label: Email
+      dataType: string
+      column: 6
+    - fieldName: CreatedOn
+      label: Created on
+      dataType: datetime
+      column: 6
+    - fieldName: UpdatedOn
+      label: Updated on
+      dataType: datetime
+      column: 6
+    - fieldName: Address
+      label: Address
+      dataType: string
+      column: 12
+      required: false
+      readOnly: false
+      hint: null
+      defaultValue: null
+      type: textarea
